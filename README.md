@@ -1,3 +1,5 @@
+<div style="background-color:rgb(143, 145, 236); padding: 20px; border-radius: 10px; color: black; box-shadow: 0 4px 6px rgba(64, 64, 108, 0.1);">
+
 # 🔍 Customer Churn Prediction
 
 ## Problem Statement
@@ -12,54 +14,28 @@ Customer churn represents a significant challenge for subscription-based busines
 ## Data Insights
 
 ### Demographic Patterns
-![Subscription Type vs Gender](https://i.imgur.com/example1.jpg)
+![Subscription Type vs Gender](images/substypebysex.png)
 
-The analysis of subscription types across gender reveals:
-- Male customers consistently outnumber female customers across all subscription types
-- The highest subscription count for males is in the Premium category
-- Basic plans show the lowest subscription counts for both genders
-- Gender distribution remains consistent across subscription types with approximately a 60:40 male to female ratio
-
-### Age and Tenure Analysis
-![Tenure by Age Group](https://i.imgur.com/example2.jpg)
-
-Key findings about customer tenure patterns:
-- Maximum tenure (approximately 60 months) is consistent across all age groups
-- The 36-45 age group has the highest number of customers with maximum tenure (over 2000)
-- Younger (18-25) and older (56-65) age groups have fewer customers reaching maximum tenure
-- The data suggests middle-aged customers (36-45) form the most stable customer base
+### Agegroup and max Tenure Analysis
+![Tenure by Age](images/agegrouptenureanalysis.png)
 
 ### Churn Rate Patterns
-![Churn Rate by Age](https://i.imgur.com/example7.jpg)
-
-Age-based churn analysis reveals:
-- U-shaped curve with lowest churn rates in the 36-45 age bracket (approximately 43%)
-- Highest churn rates in the 56-65 age group (nearly 100%)
-- Younger customers (18-25) show moderate churn rates (approximately 55%)
-- The dramatic increase in churn after age 45 suggests targeted retention strategies are needed for older demographics
+![Churn Rate by Age](images/churnbyage.png)
 
 ### Customer Interaction Impacts
-![Effect of Last Interaction on Payment Delay](https://i.imgur.com/example5.jpg)
-![Churn Rate by Last Interaction](https://i.imgur.com/example6.jpg)
+![Effect of Last Interaction on Payment Delay](images/churnbyinteraction.png)
+![Churn Rate by Last Interaction](images/churnbylasteinteraction.png)
 
-The relationship between customer interactions and behavior shows:
-- A critical threshold at 15 days since last interaction, after which:
-  - Payment delays increase from ~12.6 days to ~13.4 days
-  - Churn rates jump significantly from ~0.49 to ~0.66
-- The data clearly demonstrates that customer engagement within 15-day windows is crucial for retention
-- Both metrics remain relatively stable before and after the 15-day threshold, suggesting a clear decision point for customers
+
 
 ### Model Performance
-![Actual vs Predicted Churn](https://i.imgur.com/example3.jpg)
+![Actual vs Predicted Churn](images/actualvspreicted.png)
 
 Our prediction model demonstrates:
 - High accuracy in identifying both churning and non-churning customers
-- Predicted non-churn: 38,183 vs Actual non-churn: 38,063 (99.7% accuracy)
-- Predicted churn: 49,984 vs Actual churn: 50,104 (99.8% accuracy)
-- The balanced performance across both classes indicates robust model training with minimal bias
 
 ### Feature Distribution Analysis
-![Feature Distributions](https://i.imgur.com/example4.jpg)
+![Feature Distributions](images/featuredistribution.png)
 
 The feature distribution analysis reveals:
 - Most features show distinct patterns between churning and non-churning customers
@@ -68,13 +44,7 @@ The feature distribution analysis reveals:
 - Several features show bimodal distributions, indicating potential customer segments with different churn probabilities
 
 ### Gender and Tenure Relationship
-![Churn Rate by Tenure and Gender](https://i.imgur.com/example10.jpg)
-
-Gender-based tenure analysis shows:
-- Female customers consistently exhibit higher churn rates across all tenure periods
-- Both genders show distinct patterns at approximately 10-month and 22-month tenure points
-- Churn rates stabilize after ~25 months for both genders
-- The gender gap in churn rates narrows slightly with increased tenure but never disappears
+![Churn Rate by Tenure and Gender](images/churnratebytenureandgender.png)
 
 ## Solution Approach
 The solution employs a comprehensive approach combining data analysis and machine learning:
@@ -85,7 +55,7 @@ The solution employs a comprehensive approach combining data analysis and machin
    - Applied encoding techniques for categorical variables
 
 2. **Model Development**
-   - Implemented multiple classification algorithms (Random Forest, XGBoost, Logistic Regression)
+   - Implemented classification algorithm (Random Forest)
    - Conducted hyperparameter tuning through grid search
    - Addressed class imbalance using appropriate sampling techniques
 
@@ -94,10 +64,10 @@ The solution employs a comprehensive approach combining data analysis and machin
    - Applied k-fold cross-validation for robust performance assessment
 
 4. **Deployment Solution**
-![Churn Predictor Tool](https://i.imgur.com/example8.jpg)
-![Churn Prediction Interface](https://i.imgur.com/example9.jpg)
+![Churn Predictor Tool](images/output_2.png)
+![Churn Prediction Interface](images/output_1.png)
 
-- Developed an interactive web application for real-time churn prediction
+- Developed an **Advance interactive web application** for real-time churn prediction
 - The tool features:
   - User-friendly interface for inputting customer parameters
   - Clear visualization of churn probability
@@ -123,9 +93,8 @@ Key findings:
 - **Pandas/NumPy**: Data manipulation
 - **Scikit-learn**: Model implementation
 - **Matplotlib/Seaborn**: Visualization
-- **XGBoost**: Gradient boosting implementation
-- **Flask/Dash**: Web application development
-- **HTML/CSS/JavaScript**: Front-end interface
+- **RandomForest**: RandomForest  implementation
+- **Streamlit/HTML/CSS**: Web application development Front-end interface
 
 ## Future Work
 - Implement real-time prediction system with automated alerts
@@ -133,3 +102,4 @@ Key findings:
 - Integrate customer service interaction data for improved prediction accuracy
 - Create an executive dashboard for tracking churn metrics and intervention effectiveness
 - Explore deep learning approaches for identifying complex churn patterns
+<div>
