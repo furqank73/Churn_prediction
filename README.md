@@ -23,7 +23,7 @@ Customer churn represents a significant challenge for subscription-based busines
 ![Churn Rate by Age](images/churnbyage.png)
 
 ### Customer Interaction Impacts
-![Effect of Last Interaction on Payment Delay](images/churnbyinteraction.png)
+![Effect of Last Interaction on Payment Delay](images/Effectonpaymentbyinteraction.png)
 ![Churn Rate by Last Interaction](images/churnbylasteinteraction.png)
 
 
