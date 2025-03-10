@@ -1,7 +1,6 @@
 #
-<div style="background-color:rgb(90, 92, 216); padding: 20px; border-radius: 10px; color: black; box-shadow: 0 4px 6px rgba(78, 78, 149, 0.1);">
-
-# 🔍 Customer Churn Prediction
+<div style="background: linear-gradient(135deg, rgb(157, 19, 143), rgb(26, 68, 154)); padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(150, 60, 60, 0.1); color: white;">
+   <h2 style="font-weight: bold;">Customer Churn Prediction</h2>
 
 ## Problem Statement
 Customer churn is a critical challenge for subscription-based businesses. Identifying customers who are likely to discontinue their services is essential for implementing targeted retention strategies. This project focuses on developing a machine learning solution to predict customer churn in the telecommunications industry.
