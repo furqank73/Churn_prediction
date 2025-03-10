@@ -1,6 +1,7 @@
 #
-<div style="background: linear-gradient(135deg, rgb(157, 19, 143), rgb(26, 68, 154)); padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(150, 60, 60, 0.1); color: white;">
-   <h2 style="font-weight: bold;">Customer Churn Prediction</h2>
+<div style="background-color:rgb(90, 92, 216); padding: 20px; border-radius: 10px; color: black; box-shadow: 0 4px 6px rgba(78, 78, 149, 0.1);">
+
+#  **Customer Churn Prediction**
 
 ## Problem Statement
 Customer churn is a critical challenge for subscription-based businesses. Identifying customers who are likely to discontinue their services is essential for implementing targeted retention strategies. This project focuses on developing a machine learning solution to predict customer churn in the telecommunications industry.
@@ -75,9 +76,8 @@ The solution employs a comprehensive approach combining data analysis and machin
 
 ## Results & Impact
 The final model achieved:
-- **85.7%** prediction accuracy.
-- **83.2%** F1-score.
-- **0.89** ROC-AUC.
+- **High accuracy**: 
+- 99.6% (F1-score) and 99.2 accuracy
 
 Key findings:
 - Contract type, tenure, and monthly charges were the most significant predictors.
@@ -96,7 +96,7 @@ Key findings:
 
 ---
 
-## Deployment on AWS EC2
+# **Deployment on AWS EC2**
 
 This project involves deploying the Streamlit-based Churn Predictor web application on an AWS EC2 instance. Below are the detailed steps I followed to achieve this deployment:
 
@@ -155,14 +155,5 @@ This project involves deploying the Streamlit-based Churn Predictor web applicat
 - Replace `app.py` with the actual filename of your Streamlit application if it differs.
 - Ensure the key pair is securely stored and not shared publicly.
 - For persistent deployment, consider using a process manager like `systemd` or `supervisord` to keep the app running after the SSH session ends.
-
----
-
-## Future Work
-- Implement a real-time prediction system with automated alerts.
-- Develop personalized retention strategies based on demographic segments.
-- Integrate customer service interaction data for improved prediction accuracy.
-- Create an executive dashboard for tracking churn metrics and intervention effectiveness.
-- Explore deep learning approaches for identifying complex churn patterns.
 
 </div>
